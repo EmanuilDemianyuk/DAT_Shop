@@ -1,0 +1,5 @@
+[class*="__container"] {
+    width: min(calc(100% - 2rem), 70rem );
+    margin-inline: auto;
+}
+
