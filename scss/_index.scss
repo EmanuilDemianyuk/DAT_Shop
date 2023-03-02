@@ -1,0 +1,46 @@
+.header {
+    background-color: $brandDarkGreen;
+    @include MinWh(none, 3em);
+    @include FullAdaptive;
+
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__nav
+
+    &__nav {
+        @include displyFlex(flex, none, center, none, none);
+        padding-top: 0.875em;
+        padding-bottom: 0.9375em;
+    }
+
+    // .header__border
+
+    &__border{
+        span {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+    }
+
+    // .header__menu
+
+    &__menu {
+
+        @include displyFlex(flex, none, center, 1em, none);
+
+        flex: 1 1 auto;
+
+        @include TxSizeWtLh(1rem, 300, 1.25rem, $txWhite); 
+    }
+
+    // .header__logGroup
+
+    &__logGroup {
+        @include displyFlex(flex, none, center, none, none);
+
+        @include TxSizeWtLh(1rem, 300, 1.25rem, $txWhite);
+    }
+}

@@ -1,8 +1,6 @@
 .wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: $bg_Body;
+    @include wrapp;
+    @include FontFS('Montserrat', normal);
 }
 
 .main {

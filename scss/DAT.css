@@ -36,8 +36,82 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #E5E5E5;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 
 .main {
   flex: 1 1 auto;
+}
+
+.header {
+  background-color: rgb(33, 96, 63);
+  min-width: none;
+  min-height: 3em;
+}
+@media (max-width: 1170px) {
+  .header {
+    max-width: calc(1170px - 4em);
+  }
+}
+@media (max-width: 979px) {
+  .header {
+    max-width: calc(979px - 4em);
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    max-width: calc(768px - 4em);
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    max-width: calc(576px - 4em);
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    max-width: calc(480px - 4em);
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    max-width: calc(350px - 4em);
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  flex-direction: none;
+  padding-top: 0.875em;
+  padding-bottom: 0.9375em;
+}
+.header__border span {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+.header__menu {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  gap: 1em;
+  flex-direction: none;
+  flex: 1 1 auto;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+.header__logGroup {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  gap: none;
+  flex-direction: none;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #ffffff;
 }/*# sourceMappingURL=DAT.css.map */

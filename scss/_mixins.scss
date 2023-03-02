@@ -1,0 +1,63 @@
+// Wrapper 
+@mixin wrapp{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_Body;
+}
+
+// Display
+
+@mixin displyFlex($display, $justify-content, $align-items, $gap, $flex-direction){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+    flex-direction: $flex-direction;
+}
+// @include displyFlex();
+
+
+
+// TX
+
+@mixin TxSizeWtLh($font-size, $font-weight, $line-height, $color){
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+// @include TxSizeWtLh();
+
+@mixin FontFS($font-family, $font-style){
+    font-family: $font-family;
+    font-style: $font-style;
+}
+//@include FontFS();
+
+
+
+// WH
+
+@mixin Wh($max-width, $max-height){
+    max-width: $max-width;
+    max-height: $max-height;
+}
+// @include Wh();
+
+@mixin MinWh($min-width, $min-height){
+    min-width: $min-width;
+    min-height: $min-height;
+}
+//@include MinWh();
+
+
+
+// Img
+
+@mixin ImgWhObjF($max-width, $max-height, $object-fit){
+    max-width: $max-width;
+    max-height: $max-height;
+    object-fit: $object-fit;
+}
+//@include ImgWhObjF();
